@@ -14,4 +14,5 @@ int main() {
     increment(a);
 
     printf("%d\n", *a);
+    free(a);
 }
