@@ -34,4 +34,7 @@ int main() {
 
     if (perm1 && perm2)
         printf("%s\n%s\n", perm1, perm2); 
+
+    free(perm1);
+    free(perm2);
 }
