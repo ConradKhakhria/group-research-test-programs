@@ -2,5 +2,5 @@
 
 
 int main() {
-    printf("%d\n", 15.0 / 0.0);
+    printf("%f\n", 15.0 / 0.0);
 }
