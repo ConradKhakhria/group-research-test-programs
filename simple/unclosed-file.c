@@ -12,6 +12,9 @@ int main(int argc, char* argv[]) {
 
     FILE* f = fopen(argv[1], "r");
 
+    if (!f)
+        exit(EXIT_FAILURE);
+
     while ((buf[index++] = fgetc(f)) != EOF) {
         if (index == buf_size) {
             buf_size += 1000;
