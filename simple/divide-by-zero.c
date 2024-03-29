@@ -19,5 +19,5 @@ int main() {
     int ys[0] = {};
 
     printf("for xs: %f\n", proportion_in_list(xs, 5, 1));
-    printf("for ys: %f\n", proportion_in_list(ys, 5, 1));
+    printf("for ys: %f\n", proportion_in_list(ys, 0, 1));
 }
