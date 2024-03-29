@@ -1,6 +1,6 @@
 '-###'
 '-c'
-'simple/divide-by-zero.c'
+'simple/simple-memory-leak.c'
 '-o'
 '/dev/null'
 '-fno-cxx-modules'

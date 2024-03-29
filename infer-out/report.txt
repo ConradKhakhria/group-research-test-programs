@@ -1,0 +1,12 @@
+#0
+simple/simple-memory-leak.c:8: error: Memory Leak
+  memory dynamically allocated at line 5 by call to `malloc`, is not freed after the last access at line 8, column 9.
+   6. 
+   7.     if (xs)
+   8.         xs[4] = 4;
+              ^
+   9. }
+
+Found 1 issue
+  Issue Type(ISSUED_TYPE_ID): #
+    Memory Leak(MEMORY_LEAK): 1

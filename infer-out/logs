@@ -1,120 +1,117 @@
-[315424][      debug] Loading models took 31.764ms
-[315426][      debug] Sqlite write daemon: starting up
-[315426][      debug] Sqlite write daemon: set up complete, waiting for connections
-[315424][environment] CWD = /home/conrad/UCL/Modules/COMP0030-Research-Methods/test-programs
-[315424][environment] No .inferconfig file found
-[315424][environment] Project root = /home/conrad/UCL/Modules/COMP0030-Research-Methods/test-programs
-[315424][environment] INFER_ARGS =   @/tmp/args.tmp.2aeeef
-[315424][environment] command line arguments:   infer run --biabduction --bufferoverrun --cost
-[315424][environment]                           --liveness --loop-hoisting --printf-args --pulse
-[315424][environment]                           --uninit -- gcc -c simple/divide-by-zero.c -o
-[315424][environment]                           /dev/null
-[315424][environment] Available memory at startup: 7650 MB
-[315424][environment] Active checkers: self-in-block (C/C++/ObjC), bufferoverrun-analysis (C/C++/ObjC, Java), bufferoverrun (C/C++/ObjC, Java), purity-analysis (C/C++/ObjC, Java), starvation (C/C++/ObjC, Java), loop-hoisting (C/C++/ObjC, Java), cost (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), pulse (C/C++/ObjC, Java), printf-args (Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
-[315424][environment] Scheduler: file
-[315424][environment] Cores used: 4
-[315424][environment] Infer version v1.0.0
-[315424][environment] Copyright 2009 - present Facebook. All Rights Reserved.
-[315424][environment] 
-[315424][   progress] Capturing in make/cc mode...
-[315424][      debug] 
-[315424][      debug] *** Beginning capture of file /home/conrad/UCL/Modules/COMP0030-Research-Methods/test-programs/simple/divide-by-zero.c ***
-[315424][      debug] Loading the following linters files: /opt/infer-linux64-v1.0.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
-[315424][      debug] Elapsed: 65.334ms.
-[315424][      debug] GC stats for capture:
-[315424][      debug]   minor_words: 1.63216e+06
-[315424][      debug]   promoted_words: 254306
-[315424][      debug]   major_words: 266784
-[315424][      debug]   minor_collections: 3
-[315424][      debug]   major_collections: 1
-[315424][      debug]   compactions: 0
-[315424][      debug]   top_heap_words: 1006592
-[315424][      debug]   
-[315424][environment] Parallel jobs: 4
-[315424][   progress] Found 1 source file to analyze in /home/conrad/UCL/Modules/COMP0030-Research-Methods/test-programs/infer-out
-[315431][   progress] simple/divide-by-zero.c starting
-[315431][      debug] 
-[315431][      debug] Instantiated cost : 74 
-
-[315431][   progress] simple/divide-by-zero.c DONE
-[315424][      debug] Backend stats:
-[315424][      debug]   summary_file_try_load= 5
-[315424][      debug]   summary_read_from_disk= 0
-[315424][      debug]   summary_cache_hits= 67 (93%)
-[315424][      debug]   summary_cache_misses= 5
-[315424][      debug]   ondemand_procs_analyzed= 2
-[315424][      debug]   ondemand_local_cache_hits= 42 (93%)
-[315424][      debug]   ondemand_local_cache_misses= 3
-[315424][      debug]   proc_locker_lock_time_user= 0.00000000
-[315424][      debug]   proc_locker_lock_time_sys= 0.00000000
-[315424][      debug]   proc_locker_lock_time_wall= 0.00000000
-[315424][      debug]   proc_locker_unlock_time_user= 0.00000000
-[315424][      debug]   proc_locker_unlock_time_sys= 0.00000000
-[315424][      debug]   proc_locker_unlock_time_wall= 0.00000000
-[315424][      debug]   restart_scheduler_useful_time_user= 0.00000000
-[315424][      debug]   restart_scheduler_useful_time_sys= 0.00000000
-[315424][      debug]   restart_scheduler_useful_time_wall= 0.00000000
-[315424][      debug]   restart_scheduler_total_time_user= 0.00000000
-[315424][      debug]   restart_scheduler_total_time_sys= 0.00000000
-[315424][      debug]   restart_scheduler_total_time_wall= 0.00000000
-[315424][      debug]   
-[315424][      debug] GC stats for backend_stats.gc_stats_add.:
-[315424][      debug]   minor_words: 3.38657e+07
-[315424][      debug]   promoted_words: 204930
-[315424][      debug]   major_words: 219750
-[315424][      debug]   minor_collections: 33
-[315424][      debug]   major_collections: 2
-[315424][      debug]   compactions: 0
-[315424][      debug]   top_heap_words: 4026368
-[315424][      debug]   
-[315424][      debug] GC stats for backend_stats.gc_stats_max.:
-[315424][      debug]   minor_words: 3.38654e+07
-[315424][      debug]   promoted_words: 204930
-[315424][      debug]   major_words: 219750
-[315424][      debug]   minor_collections: 33
-[315424][      debug]   major_collections: 2
-[315424][      debug]   compactions: 0
-[315424][      debug]   top_heap_words: 1006592
-[315424][      debug]   
-[315424][      debug] Average over 4 processes
-[315424][      debug] GC stats for backend_stats.gc_stats_average.:
-[315424][      debug]   minor_words: 8.46642e+06
-[315424][      debug]   promoted_words: 51232.5
-[315424][      debug]   major_words: 54937.5
-[315424][      debug]   minor_collections: 8
-[315424][      debug]   major_collections: 0
-[315424][      debug]   compactions: 0
-[315424][      debug]   top_heap_words: 1006592
-[315424][      debug]   
-[315424][      debug] Analysis phase finished in 169ms
-[315424][      debug] backend_stats.scheduler_process_analysis_time_user= 0.02321000
-[315424][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.00000000
-[315424][      debug] backend_stats.scheduler_process_analysis_time_wall= 0.16942400
-[315424][      debug] GC stats for analysis_scheduler:
-[315424][      debug]   minor_words: 162017
-[315424][      debug]   promoted_words: 18450
-[315424][      debug]   major_words: 27156
-[315424][      debug]   minor_collections: 1
-[315424][      debug]   major_collections: 2
-[315424][      debug]   compactions: 1
-[315424][      debug]   top_heap_words: 1006592
-[315424][      debug]   
-[315424][      debug] GC stats for report:
-[315424][      debug]   minor_words: 11231
-[315424][      debug]   promoted_words: 0
-[315424][      debug]   major_words: 258
-[315424][      debug]   minor_collections: 0
-[315424][      debug]   major_collections: 0
-[315424][      debug]   compactions: 0
-[315424][      debug]   top_heap_words: 1006592
-[315424][      debug]   
-[315424][      debug] GC stats for main_process_full:
-[315424][      debug]   minor_words: 3.35129e+06
-[315424][      debug]   promoted_words: 443139
-[315424][      debug]   major_words: 972787
-[315424][      debug]   minor_collections: 10
-[315424][      debug]   major_collections: 5
-[315424][      debug]   compactions: 2
-[315424][      debug]   top_heap_words: 1006592
-[315424][      debug]   
-[315426][      debug] Sqlite write daemon: terminating
+[320419][      debug] Loading models took 33.818ms
+[320420][      debug] Sqlite write daemon: starting up
+[320420][      debug] Sqlite write daemon: set up complete, waiting for connections
+[320419][environment] CWD = /home/conrad/UCL/Modules/COMP0030-Research-Methods/test-programs
+[320419][environment] No .inferconfig file found
+[320419][environment] Project root = /home/conrad/UCL/Modules/COMP0030-Research-Methods/test-programs
+[320419][environment] INFER_ARGS =   @/tmp/args.tmp.513362
+[320419][environment] command line arguments:   infer run --biabduction --bufferoverrun --cost
+[320419][environment]                           --liveness --loop-hoisting --printf-args --pulse
+[320419][environment]                           --uninit -- gcc -c simple/simple-memory-leak.c -o
+[320419][environment]                           /dev/null
+[320419][environment] Available memory at startup: 7609 MB
+[320419][environment] Active checkers: self-in-block (C/C++/ObjC), bufferoverrun-analysis (C/C++/ObjC, Java), bufferoverrun (C/C++/ObjC, Java), purity-analysis (C/C++/ObjC, Java), starvation (C/C++/ObjC, Java), loop-hoisting (C/C++/ObjC, Java), cost (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), pulse (C/C++/ObjC, Java), printf-args (Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[320419][environment] Scheduler: file
+[320419][environment] Cores used: 4
+[320419][environment] Infer version v1.0.0
+[320419][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[320419][environment] 
+[320419][   progress] Capturing in make/cc mode...
+[320419][      debug] 
+[320419][      debug] *** Beginning capture of file /home/conrad/UCL/Modules/COMP0030-Research-Methods/test-programs/simple/simple-memory-leak.c ***
+[320419][      debug] Loading the following linters files: /opt/infer-linux64-v1.0.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[320419][      debug] Elapsed: 57.269ms.
+[320419][      debug] GC stats for capture:
+[320419][      debug]   minor_words: 1.13431e+06
+[320419][      debug]   promoted_words: 229129
+[320419][      debug]   major_words: 241067
+[320419][      debug]   minor_collections: 3
+[320419][      debug]   major_collections: 1
+[320419][      debug]   compactions: 0
+[320419][      debug]   top_heap_words: 1006592
+[320419][      debug]   
+[320419][environment] Parallel jobs: 4
+[320419][   progress] Found 1 source file to analyze in /home/conrad/UCL/Modules/COMP0030-Research-Methods/test-programs/infer-out
+[320434][   progress] simple/simple-memory-leak.c starting
+[320434][   progress] simple/simple-memory-leak.c DONE
+[320419][      debug] Backend stats:
+[320419][      debug]   summary_file_try_load= 11
+[320419][      debug]   summary_read_from_disk= 0
+[320419][      debug]   summary_cache_hits= 8 (42%)
+[320419][      debug]   summary_cache_misses= 11
+[320419][      debug]   ondemand_procs_analyzed= 1
+[320419][      debug]   ondemand_local_cache_hits= 6 (75%)
+[320419][      debug]   ondemand_local_cache_misses= 2
+[320419][      debug]   proc_locker_lock_time_user= 0.00000000
+[320419][      debug]   proc_locker_lock_time_sys= 0.00000000
+[320419][      debug]   proc_locker_lock_time_wall= 0.00000000
+[320419][      debug]   proc_locker_unlock_time_user= 0.00000000
+[320419][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[320419][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[320419][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[320419][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[320419][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[320419][      debug]   restart_scheduler_total_time_user= 0.00000000
+[320419][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[320419][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[320419][      debug]   
+[320419][      debug] GC stats for backend_stats.gc_stats_add.:
+[320419][      debug]   minor_words: 455365
+[320419][      debug]   promoted_words: 0
+[320419][      debug]   major_words: 1741
+[320419][      debug]   minor_collections: 0
+[320419][      debug]   major_collections: 0
+[320419][      debug]   compactions: 0
+[320419][      debug]   top_heap_words: 4026368
+[320419][      debug]   
+[320419][      debug] GC stats for backend_stats.gc_stats_max.:
+[320419][      debug]   minor_words: 455140
+[320419][      debug]   promoted_words: 0
+[320419][      debug]   major_words: 1741
+[320419][      debug]   minor_collections: 0
+[320419][      debug]   major_collections: 0
+[320419][      debug]   compactions: 0
+[320419][      debug]   top_heap_words: 1006592
+[320419][      debug]   
+[320419][      debug] Average over 4 processes
+[320419][      debug] GC stats for backend_stats.gc_stats_average.:
+[320419][      debug]   minor_words: 113841
+[320419][      debug]   promoted_words: 0
+[320419][      debug]   major_words: 435.25
+[320419][      debug]   minor_collections: 0
+[320419][      debug]   major_collections: 0
+[320419][      debug]   compactions: 0
+[320419][      debug]   top_heap_words: 1006592
+[320419][      debug]   
+[320419][      debug] Analysis phase finished in 35.823ms
+[320419][      debug] backend_stats.scheduler_process_analysis_time_user= 0.01190500
+[320419][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.01179200
+[320419][      debug] backend_stats.scheduler_process_analysis_time_wall= 0.03582312
+[320419][      debug] GC stats for analysis_scheduler:
+[320419][      debug]   minor_words: 112745
+[320419][      debug]   promoted_words: 1086
+[320419][      debug]   major_words: 9792
+[320419][      debug]   minor_collections: 1
+[320419][      debug]   major_collections: 2
+[320419][      debug]   compactions: 1
+[320419][      debug]   top_heap_words: 1006592
+[320419][      debug]   
+[320419][      debug] GC stats for report:
+[320419][      debug]   minor_words: 13162
+[320419][      debug]   promoted_words: 0
+[320419][      debug]   major_words: 309
+[320419][      debug]   minor_collections: 0
+[320419][      debug]   major_collections: 0
+[320419][      debug]   compactions: 0
+[320419][      debug]   top_heap_words: 1006592
+[320419][      debug]   
+[320419][      debug] GC stats for main_process_full:
+[320419][      debug]   minor_words: 2.80609e+06
+[320419][      debug]   promoted_words: 400599
+[320419][      debug]   major_words: 929758
+[320419][      debug]   minor_collections: 10
+[320419][      debug]   major_collections: 5
+[320419][      debug]   compactions: 2
+[320419][      debug]   top_heap_words: 1006592
+[320419][      debug]   
+[320420][      debug] Sqlite write daemon: terminating
