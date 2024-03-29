@@ -23,4 +23,5 @@ int main(int argc, char* argv[]) {
     }
 
     printf("File has %d characters\n", index);
+    free(buf);
 }
