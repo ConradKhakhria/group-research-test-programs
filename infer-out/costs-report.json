@@ -1,1 +1,1 @@
-[]
+[{"hash":"e4da9faa9171d4a26213eb53f9cfbc7f","loc":{"file":"simple/dead-store.c","lnum":4,"cnum":1,"enum":-1},"procedure_name":"main","procedure_id":"main","is_on_ui_thread":false,"exec_cost":{"polynomial_version":9,"polynomial":"hJWmvgAAAAcAAAADAAAACAAAAAiSoKAAQUBA","degree":0,"hum":{"hum_polynomial":"65","hum_degree":"0","big_o":"O(1)"},"trace":[]},"autoreleasepool_size":{"polynomial_version":9,"polynomial":"hJWmvgAAAAYAAAADAAAACAAAAAiSoKBAQEA=","degree":0,"hum":{"hum_polynomial":"0","hum_degree":"0","big_o":"O(1)"},"trace":[]}}]

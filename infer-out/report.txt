@@ -1,0 +1,13 @@
+#0
+simple/dead-store.c:5: error: Dead Store
+  The value written to &i (type int) is never used.
+  3. 
+  4. int main() {
+  5.     int i = 7;
+         ^
+  6. 
+  7.     for (i = 0; i < 10; i++)
+
+Found 1 issue
+  Issue Type(ISSUED_TYPE_ID): #
+      Dead Store(DEAD_STORE): 1
