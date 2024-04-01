@@ -20,7 +20,7 @@ struct Complex* complex_init(float r, float i) {
 }
 
 
-struct Complex* add_to(struct Complex* z, struct Complex* o) {
+void add_to(struct Complex* z, struct Complex* o) {
     z->real += o->real;
     z->imag += o->imag;
 }
