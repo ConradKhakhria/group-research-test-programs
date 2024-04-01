@@ -1,7 +1,7 @@
 '-###'
 '-Werror'
 '-Wall'
-'simple/dead-store.c'
+'complex/use-after-free.c'
 '-o'
 '/dev/null'
 '-fno-cxx-modules'

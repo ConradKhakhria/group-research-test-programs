@@ -1,13 +1,13 @@
 #0
-simple/dead-store.c:5: error: Dead Store
-  The value written to &i (type int) is never used.
-  3. 
-  4. int main() {
-  5.     int i = 7;
-         ^
-  6. 
-  7.     for (i = 0; i < 10; i++)
+complex/use-after-free.c:33: error: Use After Free
+  call to `string_concat()` eventually accesses memory that was invalidated by call to `free()` on line 32 indirectly during the call to `string_concat()`.
+  31. 
+  32.     char* perm1 = string_concat(s1, s2);
+  33.     char* perm2 = string_concat(s2, s1);
+                        ^
+  34. 
+  35.     if (perm1 && perm2)
 
 Found 1 issue
-  Issue Type(ISSUED_TYPE_ID): #
-      Dead Store(DEAD_STORE): 1
+      Issue Type(ISSUED_TYPE_ID): #
+  Use After Free(USE_AFTER_FREE): 1
