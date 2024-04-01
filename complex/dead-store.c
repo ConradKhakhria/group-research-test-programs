@@ -21,14 +21,19 @@ struct Complex* complex_init(float r, float i) {
 
 
 void add_to(struct Complex* z, struct Complex* o) {
-    z->real += o->real;
-    z->imag += o->imag;
+    if (z && o) {
+        z->real += o->real;
+        z->imag += o->imag;
+    }
 }
 
 
 int main() {
     struct Complex* z1 = complex_init(3.0, 4.0);
     struct Complex* z2 = complex_init(1.0, 1.0);
+
+    if (!z1 || !z2)
+        exit(EXIT_FAILURE);
 
     add_to(z1, z2);
 
